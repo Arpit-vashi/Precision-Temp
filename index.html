@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Temp</title>
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Navbar Starts-->
+    <header>
+    <nav>
+        <div class="logo">
+            <a href=""><h1>Precision</h1></a>
+            <a href=""><h2>Temp</h2></a>
+        </div>
+    </nav>
+    <!--Navbar Ends-->
+    <!--Hero Section Starts-->
+    <div class="hero">
+        <div class="container">
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <label for="temp">Enter the temperature to convert : </label>
+            <br>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="temp_diff" id="temp_diff">
+                <option value="Celsius">&#176;Celsius</option>
+                <option value="Fahrenheit">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <input class="submit" type="submit" name="temp" id="submit">
+            <br>
+            <span id="result" class="result"></span>
+        </form>
+    </div>
+    </div>
+    <!--Hero Section Ends-->
+    <footer>
+        <p>Made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i> <a href="https://github.com/arpit-vashi">by Arpit Vashi</a></p>
+        <div class="code-link">
+            <a href="https://github.com/arpit-vashi"><i class="fa-brands fa-github" style="color: #6899ee;"></i></a>
+        </div>
+    </footer>
+<script src="./converter.js"></script>
+</header>
+</body>
+</html>
